@@ -1,39 +1,31 @@
-body{
+body {
   margin: auto;
 }
-h1 {
+#header h1 {
+  height: 60px;
+  padding: 0 0 0 0;
+  margin: 0;
+  border-bottom: 1px solid #2aa2d0
+}
+#header-nav {
   text-align: center;
-  font-family: Meiryo UI;
-  font-size: 40px;
-  color: #390da0;
-  margin: 10px 0 10px 0;
+  padding: 0;
 }
-.navbar-list{
-  width: 100%;
-  list-style: none;
-  padding: inherit;
+#global-nav {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  height: 40px;
 }
-.navbar-list:after{
-  content: "";
-  clear: both;
-  display: block;
-}
-.navbar-list li{
+#global-nav > li {
+  position: relative;
   float: left;
-  width: 25%;
+  line-height: 40px;
+  width: 150px;
 }
-.navbar-list a{
-  font-family: Meiryo UI;
+#global-nav > li > a {
   font-size: 20px;
-  display: block;
-  line-height: 70px;
-  height: 70px;
-  text-align: center;
-  background: #000;
-  color:#fff;
-  border-right: 1px solid #00968a;
   text-decoration: none;
-}
-.navbar-list li:first-child a{
-  border-left: 1px solid #00968a;
 }
